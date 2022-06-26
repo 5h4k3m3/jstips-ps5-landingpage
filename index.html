@@ -5,7 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>HTML/CSS Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>PS5 LandingPage</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <div>
+        <a href="#"><img src="./images/logo.png" alt="" class="logo" /></a>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Playstation5</a></li>
+          <li><a href="#">Software</a></li>
+          <li><a href="#">Equipments</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <div class="container">
+        <div class="title-section">
+          <div class="title">
+            <h2>
+              Playstation 5<br />
+              Play Has No Limit
+            </h2>
+            <h3>遊びの限界を超える</h3>
+          </div>
+          <div class="price">
+            <p>49800 yen</p>
+            <button>Play</button>
+          </div>
+        </div>
+        <div class="image-section">
+          <img src="./images/plastation5.png" alt="" class="ps5" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-icons">
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+        reset: false,
+        delay: 200,
+        duration: 2000,
+        distance: "500px",
+      });
+      ScrollReveal().reveal(".image-section", { delay: 500, origin: "right" });
+      ScrollReveal().reveal(".title-section .title, .price p", {
+        delay: 200,
+        origin: "top",
+      });
+      ScrollReveal().reveal(".price button", { delay: 300, origin: "left" });
+      ScrollReveal().reveal(".footer-icons i", {
+        delay: 300,
+        origin: "bottom",
+        interval: 200,
+      });
+      ScrollReveal().reveal("header li", {
+        delay: 200,
+        origin: "top",
+        interval: 200,
+      });
+    </script>
+  </body>
 </html>
